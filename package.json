@@ -22,15 +22,11 @@
     "jsdom": "^11.0.0",
     "recast": "~0.12.6",
     "request": "^2.55.0",
-    "webidl2js": "^7.1.0"
+    "webidl2js": "github:mikemaccana/webidl2js"
   },
   "scripts": {
-    "build": "node scripts/transform.js && node scripts/convert-idl.js",
     "coverage": "jest --coverage",
-    "lint": "eslint .",
-    "prepublish": "node scripts/transform.js && node scripts/convert-idl.js",
-    "pretest": "node scripts/get-latest-platform-tests.js && node scripts/transform.js && node scripts/convert-idl.js",
-    "test": "jest"
+    "lint": "eslint ."
   },
   "jest": {
     "collectCoverageFrom": [
